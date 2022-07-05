@@ -1,0 +1,21 @@
+@mixin font( $f-weight, $f-size, $l-height, $l-spacing, $color) {
+    font-weight: $f-weight;
+    font-size: $f-size;
+    line-height: $l-height;
+    letter-spacing: $l-spacing;
+    color: $color;
+}
+
+@mixin hero-button () {
+    font-family: Roboto, sans-serif;
+    color: white;
+    background-color: $web-element-color;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    padding: 10px 32px;
+    border-radius: 4px;
+}
