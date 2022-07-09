@@ -9,69 +9,163 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-------------------------------------------------Header for Portfolio page---------------------------------------->
-  <header class="portfolio-header">
-    <div class="container header-content">
-      <nav class="page-header__nav">
-        <a href="./index.html" class="page-header__logo"><span class="page-header__text">Web</span>Studio</a>
-        <ul class="list page-header__list">
-          <li class="page-header__item">
-            <a href="./index.html" class="page-header__link ">Студия</a>
-          </li>
-          <li class="page-header__item">
-            <a href="./portfolio.html" class="page-header__link page-header__link--current">Портфолио</a>
-          </li>
-          <li class="page-header__item">
-            <a href="" class="page-header__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-  
-      <ul class="list contacts">
-        <li class="contacts__item">
-          <a href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon" width="16px" height="12px">
-              <use href="./img/sprite.svg#icon-envelope"></use>
+    <!------------------------------------------------------Шапка страницы--------------------------------------------->
+    <header class="page-header">
+      <div class="container header-content">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="page-header__logo"
+            ><span class="page-header__text">Web</span>Studio</a
+          >
+          <button
+            class="page-header__open-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              class="page-header__icon"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use href="./img/sprite.svg#menu" class="icon-menu"></use>
+              <!-- <use href="./img/sprite.svg#cross" class="icon-cross"></use> -->
             </svg>
-            info@devstudio.com</a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+380961111111" class="contacts__link">
-            <svg class="contacts__icon" width="10px" height="16px">
-              <use href="./img/sprite.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-<!----------------------------------------------------------- Раздел main------------------------------------------------>
+          </button>
+          <!-- -----------------------------------------------------menu -->
+          <div class="menu-container" id="menu-container">
+            <button class="page-header__close-btn" type="button">
+              <svg
+                width="40"
+                height="40"
+                class="page-header__icon"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use href="./img/sprite.svg#cross" class="icon-cross"></use>
+              </svg>
+            </button>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a
+                  href="./index.html"
+                  class="nav-list__link nav-list__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-list__item">
+                <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+              </li>
+              <li class="nav-list__item">
+                <a href="" class="nav-list__link">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__tel">
+                  <svg class="contacts__icon" width="10px" height="16px">
+                    <use href="./img/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__email">
+                  <svg class="contacts__icon" width="16px" height="12px">
+                    <use href="./img/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">Instagram</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">Twitter</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">Facebook</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!----------------------------------------------------------- Раздел main------------------------------------------------>
     <main>
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Our Projets</h1>
-          
-          <ul class="list filter-btns">
-            <li class="item-filter"><button type="button" class="list-button">Все</button></li>
-            <li class="item-filter"><button type="button" class="list-button">Веб-сайты</button></li>
-            <li class="item-filter"><button type="button" class="list-button">Приложения</button></li>
-            <li class="item-filter"><button type="button" class="list-button">Дизайн</button></li>
-            <li class="item-filter"><button type="button" class="list-button">Маркетинг</button></li>
+
+          <ul class="filter-btns">
+            <li class="item-filter">
+              <button type="button" class="list-button">Все</button>
+            </li>
+            <li class="item-filter">
+              <button type="button" class="list-button">Веб-сайты</button>
+            </li>
+            <li class="item-filter">
+              <button type="button" class="list-button">Приложения</button>
+            </li>
+            <li class="item-filter">
+              <button type="button" class="list-button">Дизайн</button>
+            </li>
+            <li class="item-filter">
+              <button type="button" class="list-button">Маркетинг</button>
+            </li>
           </ul>
-          
-          <ul class="list porfolio-list ">
+
+          <ul class="porfolio-list">
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/laptop.jpg" alt="Ноутбук" class="portfolio-img" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-desctop.jpg 1x,
+                        ./img/img@2x-desctop.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./img/img@1x-tablet.jpg 1x,
+                        ./img/img@2x-tablet.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/img@1x-mob.jpg 1x, ./img/img@2x-mob.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./img/img@1x-mob.jpg"
+                      alt="Ноутбук"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -83,29 +177,85 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/basketball-players.jpg" alt="Баскетбол" class="portfolio-img"  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-ball-desctop.jpg 1x,
+                        ./img/img@2x-ball-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-ball-tablet.jpg 1x,
+                        ./img/img@2x-ball-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-ball-mob.jpg 1x,
+                        ./img/img@2x-ball-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-ball-mob.jpg"
+                      alt="Баскетбол"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
                   <h2 class="list-title">
-                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
                   <p class="list-descr">Дизайн</p>
                 </div>
-              </a>  
+              </a>
             </li>
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/seafood-brand.jpg" alt="Ресторан" class="portfolio-img"  />   
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-seafood-tablet.jpg 1x,
+                        ./img/img@2x-seafood-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-seafood-mob.jpg 1x,
+                        ./img/img@2x-seafood-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-seafood-mob.jpg"
+                      alt="Ресторан"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -119,15 +269,42 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/earphones.jpg" alt="Наушники" class="portfolio-img"  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-phones-tablet.jpg 1x,
+                        ./img/img@2x-phones-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-phones-mob.jpg 1x,
+                        ./img/img@2x-phones-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-phones-mob.jpg"
+                      alt="Наушники"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <h2 class="list-title">Проект <span lang="en">Prime</span></h2>
+                  <h2 class="list-title">
+                    Проект <span lang="en">Prime</span>
+                  </h2>
                   <p class="list-descr">Маркетинг</p>
                 </div>
               </a>
@@ -135,15 +312,25 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/boxes.jpg" alt="Коробки" class="portfolio-img"  />     
+                  <img
+                    src="./img/boxes.jpg"
+                    alt="Коробки"
+                    class="portfolio-img"
+                    width="370"
+                  />
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <h2 class="list-title">Проект <span lang="en">Boxes</span></h2>
+                  <h2 class="list-title">
+                    Проект <span lang="en">Boxes</span>
+                  </h2>
                   <p class="list-descr">Приложение</p>
                 </div>
               </a>
@@ -151,11 +338,19 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/monoblock.jpg" alt="Моноблок" class="portfolio-img"  />
+                  <img
+                    src="./img/monoblock.jpg"
+                    alt="Моноблок"
+                    class="portfolio-img"
+                    width="370"
+                  />
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -169,11 +364,19 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/book.jpg" alt="Книга" class="portfolio-img"  /> 
+                  <img
+                    src="./img/book.jpg"
+                    alt="Книга"
+                    class="portfolio-img"
+                    width="370"
+                  />
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -187,11 +390,19 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/tag.jpg" alt="Бирка" class="portfolio-img"  />
+                  <img
+                    src="./img/tag.jpg"
+                    alt="Бирка"
+                    class="portfolio-img"
+                    width="370"
+                  />
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -203,11 +414,19 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img src="./img/netbook.jpg" alt="Нетбук" class="portfolio-img"/>  
+                  <img
+                    src="./img/netbook.jpg"
+                    alt="Нетбук"
+                    class="portfolio-img"
+                    width="370"
+                  />
                   <div class="pop-up">
-                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
-                      получить
-                      исчерпывающие сведения<br>о компании или частном лице.</p>
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения<br />о компании или
+                      частном лице.
+                    </p>
                   </div>
                 </div>
                 <div class="portfolio-content">
@@ -228,15 +447,24 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-data">
-            <a href="./index.html" class="page-header__logo page-header__logo--inverse"><span
-                class="page-header__text">Web</span>Studio</a>
-            <address class="footer-data__address">г. Киев, пр-т Леси Украинки, 26</address>
+            <a
+              href="./index.html"
+              class="page-header__logo page-header__logo--inverse"
+              ><span class="page-header__text">Web</span>Studio</a
+            >
+            <address class="footer-data__address">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
             <ul class="footer-data__list">
               <li class="footer-data__contacts">
-                <a href="mailto:info@example.com" class="footer-data__link">info@example.com</a>
+                <a href="mailto:info@example.com" class="footer-data__link"
+                  >info@example.com</a
+                >
               </li>
               <li class="footer-data__contacts">
-                <a href="tel:+380991111111" class="footer-data__link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="footer-data__link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </div>
@@ -244,28 +472,44 @@
             <h2 class="footer-social__text">Присоединяйтесь</h2>
             <ul class="list footer-social__list">
               <li class="our-team__social-item">
-                <a href="https://www.instagram.com/" class="our-team__social-link  our-team__social-link--bgc" target="_blank">
+                <a
+                  href="https://www.instagram.com/"
+                  class="our-team__social-link our-team__social-link--bgc"
+                  target="_blank"
+                >
                   <svg width="20" height="20">
                     <use href="./img/sprite.svg#icon-Insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="our-team__social-item footer-item">
-                <a href="https://twitter.com/" class="our-team__social-link  our-team__social-link--bgc" target="_blank">
+                <a
+                  href="https://twitter.com/"
+                  class="our-team__social-link our-team__social-link--bgc"
+                  target="_blank"
+                >
                   <svg class="social-icon" width="20" height="20">
                     <use href="./img/sprite.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="our-team__social-item footer-item">
-                <a href="https://uk-ua.facebook.com/" class="our-team__social-link  our-team__social-link--bgc" target="_blank">
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  class="our-team__social-link our-team__social-link--bgc"
+                  target="_blank"
+                >
                   <svg class="social-icon" width="20" height="20">
                     <use href="./img/sprite.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="our-team__social-item footer-item">
-                <a href="https://ua.linkedin.com/" class="our-team__social-link  our-team__social-link--bgc" target="_blank">
+                <a
+                  href="https://ua.linkedin.com/"
+                  class="our-team__social-link our-team__social-link--bgc"
+                  target="_blank"
+                >
                   <svg class="social-icon" width="20" height="20">
                     <use href="./img/sprite.svg#icon-linkEdin"></use>
                   </svg>
@@ -276,7 +520,12 @@
           <form class="subscribe">
             <label class="subscribe__label">
               <span class="subscribe__text">Подпишитесь на рассылку</span>
-              <input type="email" placeholder="E-mail" class="subscribe__input" name="subscribe">
+              <input
+                type="email"
+                placeholder="E-mail"
+                class="subscribe__input"
+                name="subscribe"
+              />
             </label>
             <button type="submit" class="subscribe__btn">
               Подписаться
@@ -288,5 +537,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
