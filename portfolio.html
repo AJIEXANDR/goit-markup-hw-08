@@ -36,7 +36,6 @@
               aria-label="Переключатель мобильного меню"
             >
               <use href="./img/sprite.svg#menu" class="icon-menu"></use>
-              <!-- <use href="./img/sprite.svg#cross" class="icon-cross"></use> -->
             </svg>
           </button>
           <!-- -----------------------------------------------------menu -->
@@ -53,14 +52,14 @@
             </button>
             <ul class="nav-list">
               <li class="nav-list__item">
-                <a
-                  href="./index.html"
-                  class="nav-list__link nav-list__link--current"
-                  >Студия</a
-                >
+                <a href="./index.html" class="nav-list__link">Студия</a>
               </li>
               <li class="nav-list__item">
-                <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
+                <a
+                  href="./portfolio.html"
+                  class="nav-list__link nav-list__link--current"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav-list__item">
                 <a href="" class="nav-list__link">Контакты</a>
@@ -230,6 +229,13 @@
                   <picture>
                     <source
                       srcset="
+                        ./img/img@1x-seafood-desctop.jpg 1x,
+                        ./img/img@2x-seafood-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
                         ./img/img@1x-seafood-tablet.jpg 1x,
                         ./img/img@2x-seafood-tablet.jpg 2x
                       "
@@ -272,6 +278,13 @@
                   <picture>
                     <source
                       srcset="
+                        ./img/img@1x-phones-desctop.jpg 1x,
+                        ./img/img@2x-phones-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
                         ./img/img@1x-phones-tablet.jpg 1x,
                         ./img/img@2x-phones-tablet.jpg 2x
                       "
@@ -312,12 +325,35 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img
-                    src="./img/boxes.jpg"
-                    alt="Коробки"
-                    class="portfolio-img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-boxes-desctop.jpg 1x,
+                        ./img/img@2x-boxes-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-boxes-tablet.jpg 1x,
+                        ./img/img@2x-boxes-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-boxes-mob.jpg 1x,
+                        ./img/img@2x-boxes-mob.jpg 2x
+                      "
+                      media="(min-width:320pxs)"
+                    />
+                    <img
+                      src="./img/img@1x-boxes-mob.jpg"
+                      alt="Коробки"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -338,12 +374,32 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img
-                    src="./img/monoblock.jpg"
-                    alt="Моноблок"
-                    class="portfolio-img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-mono-desctop.jpg 1x,
+                        ./img/img@2x-mono-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)" />
+                    <source
+                      srcset="
+                        ./img/img@1x-mono-tablet.jpg 1x,
+                        ./img/img@2x-mono-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./img/img@1x-mono-mob.jpg 1x,
+                        ./img/img@2x-mono-mob.jpg 2x
+                      "
+                      media="(min-width:320px)" />
+                    <img
+                      src="./img/img@1x-mono-mob.jpg"
+                      alt="Моноблок"
+                      class="portfolio-img"
+                      width="450"
+                  /></picture>
+
                   <div class="pop-up">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -364,12 +420,35 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img
-                    src="./img/book.jpg"
-                    alt="Книга"
-                    class="portfolio-img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-book-desctop.jpg 1x,
+                        ./img/img@2x-book-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-book-tablet.jpg 1x,
+                        ./img/img@2x-book-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-book-mob.jpg 1x,
+                        ./img/img@2x-book-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-book-mob.jpg"
+                      alt="Книга"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -390,12 +469,35 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img
-                    src="./img/tag.jpg"
-                    alt="Бирка"
-                    class="portfolio-img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-label-desctop.jpg 1x,
+                        ./img/img@2x-label-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-label-tablet.jpg 1x,
+                        ./img/img@2x-label-tablet.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-label-mob.jpg 1x,
+                        ./img/img@2x-label-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-label-mob.jpg"
+                      alt="Бирка"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -414,12 +516,35 @@
             <li class="foto-item">
               <a href="" class="portfolio-link">
                 <div class="img-box">
-                  <img
-                    src="./img/netbook.jpg"
-                    alt="Нетбук"
-                    class="portfolio-img"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./img/img@1x-laptop-desctop.jpg 1x,
+                        ./img/img@2x-laptop-desctop.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-laptop-tablet.jpg 1x,
+                        ./img/img@1x-laptop-tablet.jpg 1x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/img@1x-laptop-mob.jpg 1x,
+                        ./img/img@2x-laptop-mob.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./img/img@1x-laptop-mob.jpg"
+                      alt="Нетбук"
+                      class="portfolio-img"
+                      width="450"
+                    />
+                  </picture>
                   <div class="pop-up">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем
