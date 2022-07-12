@@ -15,12 +15,12 @@
 }
 
 .page-header__logo {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: calc(28 / 24);
-  letter-spacing: 0.03em;
+  @include font(700, 24px, calc(28 / 24), 0.03em, $primary-text-color);
   font-family: "Raleway", sans-serif;
-  color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, calc(31 / 26), 0.03em, $primary-text-color);
+  }
 
   .page-header__text {
     color: $web-element-color;

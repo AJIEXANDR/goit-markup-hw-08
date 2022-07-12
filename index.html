@@ -42,66 +42,70 @@
             </svg>
           </button>
           <!-- -----------------------------------------------------menu -->
-          <div class="menu-container" id="menu-container">
-            <button class="page-header__close-btn" type="button">
-              <svg
-                width="40"
-                height="40"
-                class="page-header__icon"
-                aria-label="Переключатель мобильного меню"
-              >
-                <use href="./img/sprite.svg#cross" class="icon-cross"></use>
-              </svg>
-            </button>
-            <ul class="nav-list">
-              <li class="nav-list__item">
-                <a
-                  href="./index.html"
-                  class="nav-list__link nav-list__link--current"
-                  >Студия</a
+          <div class="menu-container is-closed" id="menu-container">
+            <div class="container">
+              <button class="page-header__close-btn" type="button">
+                <svg
+                  width="40"
+                  height="40"
+                  class="page-header__icon"
+                  aria-label="Переключатель мобильного меню"
                 >
-              </li>
-              <li class="nav-list__item">
-                <a href="./portfolio.html" class="nav-list__link">Портфолио</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="#contacts" class="nav-list__link">Контакты</a>
-              </li>
-            </ul>
+                  <use href="./img/sprite.svg#cross" class="icon-cross"></use>
+                </svg>
+              </button>
+              <ul class="nav-list">
+                <li class="nav-list__item">
+                  <a
+                    href="./index.html"
+                    class="nav-list__link nav-list__link--current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="./portfolio.html" class="nav-list__link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="#contacts" class="nav-list__link">Контакты</a>
+                </li>
+              </ul>
 
-            <ul class="contacts">
-              <li class="contacts__item">
-                <a href="tel:+380961111111" class="contacts__tel">
-                  <svg class="contacts__icon" width="10px" height="16px">
-                    <use href="./img/sprite.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-              <li class="contacts__item">
-                <a href="mailto:info@devstudio.com" class="contacts__email">
-                  <svg class="contacts__icon" width="16px" height="12px">
-                    <use href="./img/sprite.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-            </ul>
+              <ul class="contacts">
+                <li class="contacts__item">
+                  <a href="tel:+380961111111" class="contacts__tel">
+                    <svg class="contacts__icon" width="10px" height="16px">
+                      <use href="./img/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a href="mailto:info@devstudio.com" class="contacts__email">
+                    <svg class="contacts__icon" width="16px" height="12px">
+                      <use href="./img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
 
-            <ul class="social-list">
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">Instagram</a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">Twitter</a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">Facebook</a>
-              </li>
-              <li class="social-list__item">
-                <a href="#" class="social-list__link">LinkedIn</a>
-              </li>
-            </ul>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link">Instagram</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link">Twitter</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link">Facebook</a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#" class="social-list__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </div>
@@ -182,11 +186,31 @@
           <ul class="our-team__list">
             <li class="our-team__member">
               <picture>
-                <source srcset="" />
+                <source
+                  srcset="
+                    ./img/img@1x-Igor-desctop.jpg 1x,
+                    ./img/img@2x-Igor-desctop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Igor-tab.jpg 1x,
+                    ./img/img@2x-Igor-tab.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Igor-mob.jpg 1x,
+                    ./img/img@2x-Igor-mob.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
                 <img
-                  src="./img/Igor-Demyanenko.jpg"
+                  src="./img/img@1x-Igor-mob.jpg"
                   alt="карта первого работника студии"
-                  width="270"
+                  width="450"
                   class="our-team__photo"
                 />
               </picture>
@@ -243,12 +267,35 @@
             </li>
 
             <li class="our-team__member">
-              <img
-                src="./img/Olga-Repina.jpg"
-                alt="карта второго работника студии"
-                width="270"
-                class="our-team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/img@1x-Olga-desctop.jpg 1x,
+                    ./img/img@2x-Olga-desctop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Olga-tab.jpg 1x,
+                    ./img/img@2x-Olga-tab.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Olga-mob.jpg 1x,
+                    ./img/img@2x-Olga-mob.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./img/img@1x-Olga-mob.jpg"
+                  alt="карта второго работника студии"
+                  width="450"
+                  class="our-team__photo"
+                />
+              </picture>
               <div class="team-data">
                 <h3 class="team-data__name">Ольга Репина</h3>
                 <p class="team-data__position">Frontend Developer</p>
@@ -302,12 +349,35 @@
             </li>
 
             <li class="our-team__member">
-              <img
-                src="./img/Nik-Tarasov.jpg"
-                alt="карта третьего работника студии"
-                width="270"
-                class="our-team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/img@1x-Nik-desctop.jpg 1x,
+                    ./img/img@2x-Nik-desctop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Nik-tab.jpg 1x,
+                    ./img/img@2x-Nik-tab.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Nik-mob.jpg 1x,
+                    ./img/img@2x-Nik-mob.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./img/img@1x-Nik-mob.jpg"
+                  alt="карта третьего работника студии"
+                  width="450"
+                  class="our-team__photo"
+                />
+              </picture>
               <div class="team-data">
                 <h3 class="team-data__name">Николай Тарасов</h3>
                 <p class="team-data__position">Marketing</p>
@@ -361,12 +431,35 @@
             </li>
 
             <li class="our-team__member">
-              <img
-                src="./img/Michail-Ermakov.jpg"
-                alt="карта четвертого работника студии"
-                width="270"
-                class="our-team__photo"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/img@1x-Misha-desctop.jpg 1x,
+                    ./img/img@2x-Misha-desctop.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Misha-tab.jpg 1x,
+                    ./img/img@2x-Misha-tab.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/img@1x-Misha-mob.jpg 1x,
+                    ./img/img@2x-Misha-mob.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./img/img@1x-Misha-mob.jpg"
+                  alt="карта четвертого работника студии"
+                  width="450"
+                  class="our-team__photo"
+                />
+              </picture>
               <div class="team-data">
                 <h3 class="team-data__name">Михаил Ермаков</h3>
                 <p class="team-data__position">UI Designer</p>

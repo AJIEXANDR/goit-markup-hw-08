@@ -27,8 +27,8 @@
 }
 
 .page-header__logo {
-  @include font(700, 24px, calc(28 / 24), 0.03em, $primary-text-color);
-  font-family: "Raleway", sans-serif;
+  // @include font(700, 24px, calc(28 / 24), 0.03em, $primary-text-color);
+  // font-family: "Raleway", sans-serif;
 
   .page-header__text {
     color: $web-element-color;
