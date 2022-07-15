@@ -6,6 +6,11 @@
   margin-top: 0px;
   margin-bottom: 30px;
   @include font(700, 28px, 1.18, 0.03em, null);
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36px, calc(42 / 36), 0.03em, null);
+    margin-bottom: 50px;
+  }
 }
 
 .our-team__list {

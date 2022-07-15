@@ -8,13 +8,14 @@
   opacity: 1;
   z-index: 1;
   padding: 93px 15px 94px 15px;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  &.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-  }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {
@@ -23,9 +24,7 @@
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) {
     position: absolute;
@@ -41,8 +40,7 @@
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
-  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .close-btn {
